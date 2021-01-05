@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">垃圾分类</string>
+
+    <style name="TopToolBar" parent="AppTheme">
+
+    </style>
+</resources>

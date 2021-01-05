@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Box Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/box_title"
+            android:text="账号登录"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"/>
+
+        <!-- Account box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_border"
+            android:padding="3dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/account_login"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EEE"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/account_text"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@null"
+                android:hint="请输入你的手机号码"/>
+        </LinearLayout>
+
+        <!-- Password box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_border"
+            android:padding="3dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/password_login"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EEE"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/password_text"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:hint="请输入你的密码"/>
+        </LinearLayout>
+
+        <!-- Sign-in button -->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <!--  Forgot password & Remember password  -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remember_pass"
+                    android:checked="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记住密码"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <!-- 为实现两端对齐加入的 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:id="@+id/forgot_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="找回密码"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  Register an account  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有账号？点击注册"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

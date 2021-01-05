@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/search_toolbar"
+        android:background="@color/colorPrimary"
+        style="@style/Toolbar.MyStyle"
+        app:navigationIcon="@drawable/back"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="垃圾分类搜索"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="#6C6C6C"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_result"/>
+
+</LinearLayout>
